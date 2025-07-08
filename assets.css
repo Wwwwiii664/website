@@ -1,0 +1,78 @@
+/* Custom animations */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fadeIn {
+    animation: fadeIn 1s ease-out forwards;
+}
+
+/* Custom styles for Tailwind */
+.hover-scale {
+    transition: transform 0.3s ease;
+}
+
+.hover-scale:hover {
+    transform: scale(1.03);
+}
+
+/* Smooth scroll */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Custom transitions */
+.transition {
+    transition: all 0.3s ease;
+}
+
+/* Mobile menu animation */
+#mobile-menu {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+}
+
+#mobile-menu.active {
+    max-height: 500px;
+    transition: max-height 0.5s ease-in;
+}
+
+/* Process steps for services page */
+.process-step {
+    position: relative;
+    flex: 1;
+}
+
+.process-arrow {
+    flex: 0 0 40px;
+    text-align: center;
+}
+
+@media (max-width: 767px) {
+    .process-step {
+        margin-bottom: 40px;
+    }
+    
+    .process-step:after {
+        content: '';
+        position: absolute;
+        bottom: -20px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 1px;
+        height: 20px;
+        background-color: #e5e7eb;
+    }
+    
+    .process-step:last-child:after {
+        display: none;
+    }
+}
+
+/* Custom styles for blog pagination */
+.pagination a.active {
+    background-color: #4f46e5;
+    color: white;
+}

@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="WK Developers - Professional web development services for businesses worldwide. Custom websites, mobile apps, SEO, and hosting solutions.">
+    <title>WK Developers | Building the Future of the Web</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body class="font-sans antialiased text-gray-800">
+    <!-- Header -->
+    <header class="sticky top-0 z-50 bg-white shadow-sm">
+        <div class="container mx-auto px-6 py-3 flex justify-between items-center">
+            <div class="flex items-center">
+                <a href="index.html" class="flex items-center">
+                    <img src="assets/images/logo.svg" alt="WK Developers Logo" class="h-10">
+                    <span class="ml-2 text-xl font-bold text-indigo-600">WK Developers</span>
+                </a>
+            </div>
+            <nav class="hidden md:flex space-x-8">
+                <a href="index.html" class="text-indigo-600 font-medium">Home</a>
+                <a href="about.html" class="hover:text-indigo-600 transition">About</a>
+                <a href="services.html" class="hover:text-indigo-600 transition">Services</a>
+                <a href="portfolio.html" class="hover:text-indigo-600 transition">Portfolio</a>
+                <a href="pricing.html" class="hover:text-indigo-600 transition">Pricing</a>
+                <a href="contact.html" class="hover:text-indigo-600 transition">Contact</a>
+            </nav>
+            <a href="contact.html" class="hidden md:block bg-indigo-600 text-white px-4 py-2 rounded-md hover:bg-indigo-700 transition">Get Started</a>
+            <button id="mobile-menu-button" class="md:hidden text-gray-600">
+                <i class="fas fa-bars text-2xl"></i>
+            </button>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t">
+            <div class="container mx-auto px-6 py-3 flex flex-col space-y-3">
+                <a href="index.html" class="text-indigo-600 font-medium">Home</a>
+                <a href="about.html" class="hover:text-indigo-600 transition">About</a>
+                <a href="services.html" class="hover:text-indigo-600 transition">Services</a>
+                <a href="portfolio.html" class="hover:text-indigo-600 transition">Portfolio</a>
+                <a href="pricing.html" class="hover:text-indigo-600 transition">Pricing</a>
+                <a href="contact.html" class="hover:text-indigo-600 transition">Contact</a>
+                <a href="contact.html" class="bg-indigo-600 text-white px-4 py-2 rounded-md text-center hover:bg-indigo-700 transition">Get Started</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="bg-gradient-to-r from-indigo-500 to-purple-600 text-white py-20">
+        <div class="container mx-auto px-6 text-center">
+            <h1 class="text-4xl md:text-6xl font-bold mb-6 animate-fadeIn">We Build the Future of the Web</h1>
+            <p class="text-xl md:text-2xl mb-8 max-w-3xl mx-auto">Cutting-edge web solutions tailored to your business needs. Global reach with local expertise.</p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="contact.html" class="bg-white text-indigo-600 px-8 py-3 rounded-md font-semibold hover:bg-gray-100 transition transform hover:scale-105">Request a Quote</a>
+                <a href="services.html" class="bg-transparent border-2 border-white px-8 py-3 rounded-md font-semibold hover:bg-white hover:text-indigo-600 transition transform hover:scale-105">Our Services</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Highlights -->
+    <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-12">Our Core Services</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition transform hover:-translate-y-1">
+                    <div class="text-indigo-600 mb-4">
+                        <i class="fas fa-code text-4xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Web Development</h3>
+                    <p class="text-gray-600">Custom websites and web applications built with modern technologies.</p>
+                    <a href="services.html#web-dev" class="text-indigo-600 mt-4 inline-block font-medium">Learn More →</a>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition transform hover:-translate-y-1">
+                    <div class="text-indigo-600 mb-4">
+                        <i class="fas fa-mobile-alt text-4xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Mobile Apps</h3>
+                    <p class="text-gray-600">iOS and Android applications that deliver seamless user experiences.</p>
+                    <a href="services.html#mobile-dev" class="text-indigo-600 mt-4 inline-block font-medium">Learn More →</a>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition transform hover:-translate-y-1">
+                    <div class="text-indigo-600 mb-4">
+                        <i class="fas fa-search-dollar text-4xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">SEO Optimization</h3>
+                    <p class="text-gray-600">Boost your online visibility and drive more traffic to your website.</p>
+                    <a href="services.html#seo" class="text-indigo-600 mt-4 inline-block font-medium">Learn More →</a>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition transform hover:-translate-y-1">
+                    <div class="text-indigo-600 mb-4">
+                        <i class="fas fa-server text-4xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Hosting</h3>
+                    <p class="text-gray-600">Reliable, secure, and scalable hosting solutions for your business.</p>
+                    <a href="services.html#hosting" class="text-indigo-600 mt-4 inline-block font-medium">Learn More →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="py-16">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col lg:flex-row items-center">
+                <div class="lg:w-1/2 mb-10 lg:mb-0">
+                    <img src="assets/images/team-working.jpg" alt="WK Developers Team" class="rounded-lg shadow-xl">
+                </div>
+                <div class="lg:w-1/2 lg:pl-12">
+                    <h2 class="text-3xl font-bold mb-8">Why Choose WK Developers?</h2>
+                    <div class="space-y-6">
+                        <div class="flex">
+                            <div class="text-indigo-600 mr-4 mt-1">
+                                <i class="fas fa-check-circle text-2xl"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-semibold mb-2">Proven Expertise</h3>
+                                <p class="text-gray-600">With over 10 years in the industry, we've delivered 500+ successful projects for clients worldwide.</p>
+                            </div>
+                        </div>
+                        <div class="flex">
+                            <div class="text-indigo-600 mr-4 mt-1">
+                                <i class="fas fa-check-circle text-2xl"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-semibold mb-2">Cutting-Edge Technologies</h3>
+                                <p class="text-gray-600">We stay ahead of the curve with the latest frameworks, tools, and best practices in web development.</p>
+                            </div>
+                        </div>
+                        <div class="flex">
+                            <div class="text-indigo-600 mr-4 mt-1">
+                                <i class="fas fa-check-circle text-2xl"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-semibold mb-2">Client-Centric Approach</h3>
+                                <p class="text-gray-600">Your success is our priority. We work closely with you to understand your goals and deliver tailored solutions.</p>
+                            </div>
+                        </div>
+                        <div class="flex">
+                            <div class="text-indigo-600 mr-4 mt-1">
+                                <i class="fas fa-check-circle text-2xl"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-semibold mb-2">Ongoing Support</h3>
+                                <p class="text-gray-600">Our relationship doesn't end at launch. We provide maintenance and support to keep your digital assets running smoothly.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Client Testimonials -->
+    <section class="py-16 bg-indigo-50">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-12">What Our Clients Say</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <div class="flex items-center mb-4">
+                        <div class="text-yellow-400 mr-2">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 mb-6">"WK Developers transformed our online presence with a stunning website that perfectly represents our brand. Their attention to detail and technical expertise exceeded our expectations."</p>
+                    <div class="flex items-center">
+                        <img src="assets/images/client1.jpg" alt="Client" class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <h4 class="font-semibold">Sarah Johnson</h4>
+                            <p class="text-gray-500 text-sm">CEO, Bright Solutions</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <div class="flex items-center mb-4">
+                        <div class="text-yellow-400 mr-2">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 mb-6">"The mobile app developed by WK Developers has significantly improved our customer engagement. Their team was professional, responsive, and delivered on time."</p>
+                    <div class="flex items-center">
+                        <img src="assets/images/client2.jpg" alt="Client" class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <h4 class="font-semibold">Michael Chen</h4>
+                            <p class="text-gray-500 text-sm">CTO, TechNova</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <div class="flex items-center mb-4">
+                        <div class="text-yellow-400 mr-2">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 mb-6">"Their SEO services helped us triple our organic traffic in just six months. WK Developers understands the digital landscape and delivers measurable results."</p>
+                    <div class="flex items-center">
+                        <img src="assets/images/client3.jpg" alt="Client" class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <h4 class="font-semibold">Emma Rodriguez</h4>
+                            <p class="text-gray-500 text-sm">Marketing Director, Global Retail</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Client Logos -->
+    <section class="py-12 bg-white">
+        <div class="container mx-auto px-6">
+            <h3 class="text-center text-gray-500 mb-8">Trusted by leading companies worldwide</h3>
+            <div class="flex flex-wrap justify-center items-center gap-8 md:gap-16">
+                <img src="assets/images/client-logo1.svg" alt="Client Logo" class="h-8 opacity-60 hover:opacity-100 transition">
+                <img src="assets/images/client-logo2.svg" alt="Client Logo" class="h-8 opacity-60 hover:opacity-100 transition">
+                <img src="assets/images/client-logo3.svg" alt="Client Logo" class="h-8 opacity-60 hover:opacity-100 transition">
+                <img src="assets/images/client-logo4.svg" alt="Client Logo" class="h-8 opacity-60 hover:opacity-100 transition">
+                <img src="assets/images/client-logo5.svg" alt="Client Logo" class="h-8 opacity-60 hover:opacity-100 transition">
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-16 bg-indigo-600 text-white">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-3xl font-bold mb-6">Ready to Transform Your Digital Presence?</h2>
+            <p class="text-xl mb-8 max-w-2xl mx-auto">Let's discuss how we can help you achieve your business goals with custom digital solutions.</p>
+            <a href="contact.html" class="bg-white text-indigo-600 px-8 py-3 rounded-md font-semibold hover:bg-gray-100 transition transform hover:scale-105 inline-block">Get Started Today</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div>
+                    <a href="index.html" class="flex items-center mb-6">
+                        <img src="assets/images/logo-white.svg" alt="WK Developers Logo" class="h-10">
+                        <span class="ml-2 text-xl font-bold">WK Developers</span>
+                    </a>
+                    <p class="text-gray-400 mb-4">Building innovative digital solutions for businesses worldwide.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white transition"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white transition"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white transition"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white transition"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="text-gray-400 hover:text-white transition">Home</a></li>
+                        <li><a href="about.html" class="text-gray-400 hover:text-white transition">About Us</a></li>
+                        <li><a href="services.html" class="text-gray-400 hover:text-white transition">Services</a></li>
+                        <li><a href="portfolio.html" class="text-gray-400 hover:text-white transition">Portfolio</a></li>
+                        <li><a href="contact.html" class="text-gray-400 hover:text-white transition">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Services</h3>
+                    <ul class="space-y-2">
+                        <li><a href="services.html#web-dev" class="text-gray-400 hover:text-white transition">Web Development</a></li>
+                        <li><a href="services.html#mobile-dev" class="text-gray-400 hover:text-white transition">Mobile App Development</a></li>
+                        <li><a href="services.html#ui-ux" class="text-gray-400 hover:text-white transition">UI/UX Design</a></li>
+                        <li><a href="services.html#seo" class="text-gray-400 hover:text-white transition">SEO Services</a></li>
+                        <li><a href="services.html#hosting" class="text-gray-400 hover:text-white transition">Web Hosting</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Newsletter</h3>
+                    <p class="text-gray-400 mb-4">Subscribe to our newsletter for the latest updates and insights.</p>
+                    <form class="flex">
+                        <input type="email" placeholder="Your email" class="px-4 py-2 w-full rounded-l-md focus:outline-none text-gray-800">
+                        <button type="submit" class="bg-indigo-600 px-4 py-2 rounded-r-md hover:bg-indigo-700 transition">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2023 WK Developers. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
